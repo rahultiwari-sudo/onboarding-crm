@@ -1,0 +1,32 @@
+const CRM = {
+  SHEETS: {
+    INCOMING_ANA: '01_Incoming_ANA',
+    INCOMING_ELEVATE: '02_Incoming_Elevate',
+    LEADS: '03_Leads',
+    CALL_LOGS: '04_CallLogs',
+    EMAIL_LOGS: '05_EmailLogs',
+    AUDIT_LOGS: '06_AuditLogs',
+    USERS: '07_Users',
+    PROGRAMS: '08_Programs',
+    EMAIL_TEMPLATES: '09_EmailTemplates',
+    SETTINGS: '10_Settings',
+    IMPORT_HISTORY: '11_ImportHistory'
+  },
+  STATUS: {
+    PENDING: 'PENDING',
+    CONTACTED: 'CONTACTED',
+    CALLBACK: 'CALLBACK',
+    ONBOARDED: 'ONBOARDED',
+    NOT_INTERESTED: 'NOT_INTERESTED',
+    NOT_RESPONDING: 'NOT_RESPONDING',
+    ISSUE: 'ISSUE'
+  },
+  COSMOS_STATUS: {
+    PENDING: 'PENDING',
+    IN_PROGRESS: 'IN_PROGRESS',
+    ENRICHED: 'ENRICHED',
+    NOT_FOUND: 'NOT_FOUND',
+    INVALID_ID: 'INVALID_ID',
+    NEEDS_REVIEW: 'NEEDS_REVIEW'
+  }
+};

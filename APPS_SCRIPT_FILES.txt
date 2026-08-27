@@ -1,0 +1,19 @@
+FILES TO KEEP IN APPS SCRIPT
+
+1. Index.html       - frontend entry point
+2. WebApp.gs        - doGet() web-app entry point
+3. Config.gs        - CRM sheet/status configuration
+4. Utils.gs         - shared helpers
+5. Validation.gs    - sheet/intake/duplicate validation
+6. Audit.gs         - audit writer
+7. Database.gs      - database helpers, access control, dashboard metrics, Leads read API
+8. ServerApi.gs     - Leads write API, calls, callbacks, reports, audit/users APIs
+9. Code.gs          - ANA intake/Cosmos/test workflows
+
+DO NOT ADD
+- LeadsBackend.gs (read API consolidated in Database.gs; write/supporting API endpoints are in ServerApi.gs)
+
+IMPORTANT
+- Apps Script project should be bound to the CRM spreadsheet.
+- Index.html is served by WebApp.gs.
+- Deploy as Web app after replacing these files.
